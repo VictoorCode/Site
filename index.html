@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Modelo De Agenda</title>
+    </head>
+    <style>
+        #texto {
+          font-size: 40px;
+          color: white;
+          border-left: 6px solid red;
+          text-shadow: red;
+          box-shadow: red;
+        }
+
+        #site {
+        background-color: rgb(236, 81, 81);
+        border: 1px solid red;
+        color: brown;
+        padding: 40px;
+        text-align: center;
+        }
+        
+        #título {
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(255, 0, 0);
+        color: rgb(255, 0, 0);
+        padding: 20px;
+        text-align: center;
+        }
+        #subtítulo {
+        background-color: rgb(255, 255, 255);
+        border-radius: 12px;
+        padding: 1px;
+        border: 1px solid rgb(255, 0, 0);
+        color: rgb(255, 0, 0);
+        text-align: center;
+        }
+
+        corel {
+            animation-name: corel;
+            animation-duration: 4s;
+        }
+        agenda2 {
+            animation-name: test2;
+            animation-duration: 4s;
+        }
+        html {
+            min-height: 100%;
+        }
+        body {
+            -webkit-animation: colorchange 30s infinite; 
+            animation: colorchange 30s infinite;
+            animation: test2 5s infinite;
+            animation: corel 4s infinite;
+        }
+
+        .button {
+        background-color: #ffffff;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        border: 2px solid rgb(255, 0, 0);
+        color: #ff0000;
+        cursor: pointer;
+        display:inline-block;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .otherbutton {
+        background-color: #dbdbdb;
+        -webkit-border-radius: 12px;
+        border-radius: 12px;
+        border: 2px solid rgb(255, 0, 0);
+        color: #ff0000;
+        cursor: pointer;
+        display:inline-block;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.5s ease-in-out;
+      }
+
+      @keyframes glowing {
+        0% {
+          background-color: #ffffff;
+          font-size: 10px;
+          box-shadow: 0 0 5px #fff2f2;
+        }
+        50% {
+          background-color: #ff0800;
+          font-size: 11px;
+          color: white;
+          border: 2px solid white;
+          box-shadow: 0 0 20px #ff0000;
+        }
+        100% {
+          background-color: #ffffff;
+          font-size: 10px;
+          box-shadow: 0 0 5px #ffffff;
+        }
+      }
+      .button:hover {
+        animation: glowing 1000ms infinite;
+      }
+
+      .otherbutton:hover {
+        background-color: #ffffff;
+        font-size: 14px;
+        box-shadow: 0 0 5px #fff2f2;
+      }
+
+        @-webkit-keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+@keyframes colorchange {
+     0%  {background: #33FFF3;}
+    25%  {background: #78281F;}
+    50%  {background: #117A65;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+
+body {
+    animation: colorchange 10000ms infinite;
+    font-size: 16px;
+}
+
+@keyframes test2 {
+    0%   {width: 300px; height: 300px}
+    50% {width: 330px; height: 350px}
+    100% {width: 300px; height: 300px}
+}
+
+@keyframes corel {
+    50% {width: 330px; height: 330px}
+    100% {width: 330px; height: 330px}
+}
+
+#agenda {
+  transition: all 0.5 ease-in-out;
+}
+
+    </style>
+    <script>
+        function algo() {
+        }
+    </script>
+    <body>
+        <h1 id="título">Modelo de Agenda!</h1>
+        <h2 id="subtítulo"><span>Site Oficial</span></h2>
+        &emsp;
+        <p><span>Aqui vendemos agendas, quadros e etc!</span></p>
+        <p><span>Temos Muitos Quadros pra VOCÊ comprar!</span></p>
+        &emsp;
+        &emsp;
+        <img id="agenda" src="img_agenda.jpg" alt="agenda" style="width: 300px;height: 300px;">
+        <button id="agenda" class="button" onclick="document.getElementById('agenda').src='img_agenda2.jpg'">Agenda 1</button>
+        <button id="agenda" class="button" onclick="document.getElementById('agenda').src='img_agenda.jpg'">Agenda 2</button>
+        &emsp;
+        &emsp;
+        <script src="index.js"></script>
+    </body>
+    <body>
+        <p><span>Você poderá Comprar Quadros de Enfeite</span></p>
+        <b><span>Para Encantar Sua Casa!</span></b>
+        <p><span>Compre Aqui: </span></p>
+        <img src="mdalogo.png" alt="agenda2" style="width: 200px;height: 50px;">
+        <iframe src="https://modelodeagenda.com/" height="400" width="500" style="border:2px solid red;" title="Iframe Example"></iframe>
+        <p><span>Nós Íremos Trabalhar Pra Fazer Nossos Clientes </span> <b><span>Felizes e Satisfeitos!</span></b></p>
+        &emsp;
+    </body>
+    <body>
+        &emsp;
+        <button class="button" id="agenda" onclick="document.getElementById('agenda2').src='img_agenda4.jpg'">Agenda 1</button>
+        <button id="agenda" class="button" onclick="document.getElementById('agenda2').src='img_agenda3.jpg'">Agenda 2</button>
+        <img id="agenda2" src="img_agenda3.jpg" alt="agenda2" style="width: 400px;height: 400px;">
+        <p style="font: 1em sans-serif;"><span>O blog <b>Modelo de Agenda</b></span></p>
+        <p style="font: 1em sans-serif;"><span>Possui uma <b>loja especializada</b></span></p>
+        <p style="font: 1em sans-serif;"><span>Em <b>Agendas e Planners</b></span></p>
+        <p style="font: 1em sans-serif;"><span>No <b>formato pdf e alguns modelos</b></span></p>
+        <p style="font: 1em sans-serif;"><span>Editaveis no <b>CorelDraw</b></span></p>
+        <img id="coreldraw" src="coreldraw.png" alt="corel" style="width: 300px;height: 250px;">
+        &emsp;
+        &emsp;
+        <h1 id="título">SAIBA DOS PROGRAMAS DO DESENVOLVEDOR</h1>
+        <p id="texto">Modelo De Agenda: </p>
+        <p><span>Agora o Modelo De Agenda tem o</span></p>
+        <p><span>seu Próprio Aplicativo oficial! Ele é</span></p>
+        <p><span>simples, fácil de usar e Totalmente</span></p>
+        <p><span>Funcional! Instale agora de graça!</span></p>
+        <a href="C:\Modelo_De_Agenda.rar">
+        <button class="otherbutton">Download</button>
+        </a>
+        <p id="texto">Calculadora Complexa: </p>
+        <p><span>Uma Calculadora Complexa e interessante</span></p>
+        <p><span>e Funcional. Contem vários tipos de </span></p>
+        <p><span>cálculos pra fazer, e até calculo de</span></p>
+        <p><span>horas! Instale agora de graça!</span></p>
+        <a href="C:\Calculadora_Complexa.rar">
+        <button class="otherbutton">Download</button>
+        </a>
+    </body>
+    <style>
+    </style>
+</html>
